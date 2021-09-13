@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+:root {
+  /* BLUE  SCHEME  */
+  --color-127CF9: #127cf9;
+  --color-59A3FB: #59a3fb;
+  --color-88BEFC: #88befc;
+  --color-B8D8FD: #b8d8fd;
+  --color-E7F2FE: #e7f2fe;
+  --color-FA1111: #fa1111;
+  /* BLACK SCHEME */
+  --color-17191C: #17191c;
+  --color-5D5E60: #5d5e60;
+  --color-8B8C8D: #8b8c8d;
+  --color-B9BABB: #b9babb;
+  --color-E8E8E8: #e8e8e8;
+  --color-F8F8F8: #f8f8f8;
+  /* FONT SIZES  */
+  --font-xxxl: 62px;
+  --font-xxl: 49px;
+  --font-xl: 39px;
+  --font-lg: 31px;
+  --font-md: 25px;
+  --font-sm: 20px;
+  --font-sm: 16px;
+  --font-xs: 20px;
+  --font-xxs: 13px;
+}
