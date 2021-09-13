@@ -159,19 +159,18 @@ body {
   padding: 16px 16px 6px 24px !important;
 }
 .accordion-button:focus {
-  outline: none;
-  border-color: transparent !important;
+  box-shadow: none !important;
 }
+
 .accordion-button:not(.collapsed) {
   color: white !important;
   background-color: transparent !important;
-  box-shadow: non !important;
+  box-shadow: none !important;
 }
 .modal-header {
   border-bottom: none !important;
 }
-.accordion-item {
-}
+
 /* ========================= */
 @media (max-width: 768px) {
   :root {
