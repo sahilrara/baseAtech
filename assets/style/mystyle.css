@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*mam/sir miane ye do properties use ki hai------>>>>>>>*/
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.2s;
+    /*<<<<<<<<<-------*/
+}
+
+:root {
+    /* BLUE  SCHEME  */
+    --color-127CF9: #127cf9;
+    --color-59A3FB: #59a3fb;
+    --color-88BEFC: #88befc;
+    --color-B8D8FD: #b8d8fd;
+    --color-E7F2FE: #e7f2fe;
+    --color-E5E5E5: #E5E5E5;
+    --color-FA1111: #fa1111;
+    /* BLACK SCHEME */
+    --color-17191C: #17191c;
+    --color-5D5E60: #5d5e60;
+    --color-8B8C8D: #8b8c8d;
+    --color-B9BABB: #b9babb;
+    --color-E8E8E8: #e8e8e8;
+    --color-F8F8F8: #f8f8f8;
+    /* FONT SIZES  */
+    --font-xxxl: 62px;
+    --font-xxl: 49px;
+    --font-xl: 39px;
+    --font-lg: 31px;
+    --font-md: 25px;
+    --font-sm: 20px;
+    --font-sm: 16px;
+    --font-xs: 20px;
+    --font-xxs: 13px;
+}
+
+/* -------TYPOGRAPHY------- */
+.bg-E5E5E5 {
+    background-color: var(--color-E5E5E5);
+}
+
+/* ----------FONT-SIZES---------- */
+.fs-13 {
+    font-size: var(--font-xxs);
+}
+
+.fs-16 {
+    font-size: var(--font-sm);
+}
+
+.fs-20 {
+    font-size: var(--font-xs);
+}
+
+.fs-25 {
+    font-size: var(--font-md);
+}
+
+.fs-31 {
+    font-size: var(--font-lg);
+}
+
+.fs-39 {
+    font-size: var(--font-xl);
+}
+
+.fs-49 {
+    font-size: var(--font-xxl);
+}
+
+.fs-62 {
+    font-size: var(--font-xxxl);
+}
+
+/* --------FONT-WEIGHT--------- */
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+/* ----------COLOR---------- */
+.fc-17191c {
+    color: var(--color-17191C);
+}
+
+.fc-5D5E60 {
+    color: var(--color-5D5E60);
+}
+
+.fc-127cf9 {
+    color: var(--color-127CF9);
+}
+
+.fc-17191C {
+    color: var(--color-17191C);
+}
+
+/* -------------POST------------- */
+.post {
+    border: 1px solid #DCDDDD !important;
+    background-color: var(--color-F8F8F8);
+    transition: all 200ms ease-in-out;
+    /* Gray-300 */
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+}
+
+.post:hover {
+    border: none;
+    outline: none;
+    box-shadow: 0px 3px 15px #EFF3F7;
+    background-color: white;
+}
+
+/* ---------PAGE-BUTTONS--------- */
+.small-button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    background-color: var(--color-127CF9);
+    transition: all 200ms ease-in-out;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.small-button:hover {
+    box-shadow: 0px 4px 10px -9px #96BFEF;
+}
+
+.larg-button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1em 1.5em;
+    background-color: var(--color-127CF9);
+    transition: all 200ms ease-in-out;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.larg-button:hover {
+    box-shadow: 0px 4px 10px -9px #96BFEF;
+}
+
+/* DROPDOWN-BUTTON */
+.sorting {
+    outline: none;
+    background-color: white;
+}
+
+.sorting>ul:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.creator {
+    padding: 0.25em 0.25em;
+    width: 200px;
+    outline: none;
+    background-color: white;
+}
+
+.creator>ul:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.bg-E5E5E5 input[type="search"] {
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    color: #8B8C8D;
+    padding: 1em 1.25em;
+    outline: none;
+}
+
+.bg-E5E5E5 svg {
+    cursor: pointer;
+}
+
+/* MEDIA-QUARIES */
+@media (max-width: 768px) {
+    :root {
+        --font-xxxl: 40px;
+        --font-xxl: 30px;
+        --font-xl: 34px;
+        --font-lg: 27px;
+        --font-md: 21px;
+        --font-sm: 17px;
+        --font-smll: 14px;
+        --font-xs: 18px;
+        --font-xxs: 10px;
+    }
+}
+
+@media (max-width: 567px) {
+    :root {
+        --font-xxxl: 38px;
+        --font-xxl: 27px;
+        --font-xl: 31px;
+        --font-lg: 25px;
+        --font-md: 19px;
+        --font-sm: 15px;
+        --font-smll: 12px;
+        --font-xs: 16px;
+        --font-xxs: 10px;
+    }
+}
