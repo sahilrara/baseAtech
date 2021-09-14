@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/style/vipin.css" />
+    <link rel="stylesheet" href="./assets/style/jobfeed.css" />
+
+    <title>A tech my job sidebar</title>
+  </head>
+  <body>
+    <!-- my job section  -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-3 col-12 position-relative">
+            <div class="my-5 pt-3 ps-5">
+              <span class="side-line position-absolute h-100"></span>
+              <p class="job-feed pb-2">Job Feed</p>
+              <ul class="list-unstyled">
+                <li class="my-2">
+                  <input type="radio" name="flexRadioDefault" id="Recent" />
+                  <label class="ms-3 Job-Feed-option" for="Recent">
+                    Recent</label
+                  >
+                </li>
+                <li class="my-2">
+                  <input type="radio" name="flexRadioDefault" id="BestMatch" />
+                  <label class="ms-3 Job-Feed-option" for="BestMatch">
+                    Best Match</label
+                  >
+                </li>
+                <li class="my-2">
+                  <input type="radio" name="flexRadioDefault" id="TopRated" />
+                  <label class="ms-3 Job-Feed-option" for="TopRated">
+                    Top Rated</label
+                  >
+                </li>
+                <li class="my-2">
+                  <input type="radio" name="flexRadioDefault" id="MyJobs" />
+                  <label class="ms-3 Job-Feed-option" for="MyJobs">
+                    My Jobs</label
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xxl-9 col-12">
+            <div
+              class="
+                d-flex
+                justify-content-between
+                align-items-center
+                my-5
+                mb-4 mb-sm-5
+              "
+            >
+              <div
+                class="
+                  position-relative
+                  search-job
+                  d-flex
+                  w-425
+                  align-items-center
+                "
+              >
+                <input
+                  type="text"
+                  class="
+                    border-0
+                    w-425
+                    py-sm-3 py-2
+                    px-sm-4 px-3
+                    search-input
+                    w-100
+                    rounded-pill
+                  "
+                  placeholder="Search for job..."
+                />
+                <svg
+                  class="position-absolute search-icon"
+                  width="19"
+                  height="19"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 16C9.77498 15.9996 11.4988 15.4054 12.897 14.312L17.293 18.708L18.707 17.294L14.311 12.898C15.405 11.4997 15.9996 9.77544 16 8C16 3.589 12.411 0 8 0C3.589 0 0 3.589 0 8C0 12.411 3.589 16 8 16ZM8 2C11.309 2 14 4.691 14 8C14 11.309 11.309 14 8 14C4.691 14 2 11.309 2 8C2 4.691 4.691 2 8 2Z"
+                    fill="#8B8C8D"
+                  />
+                </svg>
+              </div>
+
+              <div class="dropdown w-129 ms-sm-4 ms-3">
+                <button
+                  class="
+                    btn
+                    Sorting-btn
+                    form-select
+                    py-2
+                    px-3
+                    pe-5
+                    rounded-pill
+                    bg-white
+                  "
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sorting
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Name</a></li>
+                  <li><a class="dropdown-item" href="#">Date</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Type</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-12 my-3 px-3">
+                <div class="job-cards p-4 position-relative">
+                  <span class="bluebox position-absolute"></span>
+                  <div class="px-xxl-4">
+                    <p class="card-hadings mb-2 card-head-line">
+                      Pellentesque magna in lorem non dui. Enim, congue quis
+                      nisi fringilla. Sit semper rhoncus tristique non tellus,
+                      dictumst.
+                    </p>
+                    <p class="fixed-price">Fixed-Price</p>
+                    <p class="price">$100</p>
+                    <ul class="list-unstyled">
+                      <li class="d-flex justify-content-between">
+                        <p class="para mb-2">Start Date:</p>
+                        <p class="para mb-2">9/09/2021</p>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <p class="para mb-2">Deadline:</p>
+                        <p class="para mb-2">12/09/2021</p>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <p class="para">Deliveries Made:</p>
+                        <p class="para">2</p>
+                      </li>
+                    </ul>
+                    <div>
+                      <button class="view-job-btn border-0">
+                        <a href="#" class="text-decoration-none text-white"
+                          >View Job</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 my-3 px-3">
+                <div class="job-cards p-4 position-relative">
+                  <div class="px-xxl-4">
+                    <p class="card-hadings mb-2 card-head-line">
+                      Sit semper rhoncus tristique non tellus, dictumst.
+                    </p>
+                    <p class="fixed-price">Fixed-Price</p>
+                    <p class="price">$100</p>
+                    <ul class="list-unstyled">
+                      <li class="d-flex justify-content-between">
+                        <p class="para mb-2">Start Date:</p>
+                        <p class="para mb-2">9/09/2021</p>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <p class="para mb-2">Deadline:</p>
+                        <p class="para mb-2">12/09/2021</p>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <p class="para">Deliveries Made:</p>
+                        <p class="para">2</p>
+                      </li>
+                    </ul>
+                    <div>
+                      <button class="view-job-btn border-0">
+                        <a href="#" class="text-decoration-none text-white"
+                          >View Job</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 my-3 px-3">
+                <div class="job-cards p-4 position-relative">
+                  <div class="px-xxl-4">
+                    <p class="card-hadings mb-2 card-head-line">
+                      Pellentesque magna in lorem non dui. Enim, congue quis
+                      nisi fringilla. Sit semper rhoncus tristique non tellus,
+                      dictumst.
+                    </p>
+                    <p class="fixed-price">Fixed-Price</p>
+                    <p class="price">$100</p>
+                    <ul class="list-unstyled">
+                      <li class="d-flex justify-content-between">
+                        <p class="para mb-2">Start Date:</p>
+                        <p class="para mb-2">9/09/2021</p>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <p class="para mb-2">Deadline:</p>
+                        <p class="para mb-2">12/09/2021</p>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <p class="para">Deliveries Made:</p>
+                        <p class="para">2</p>
+                      </li>
+                    </ul>
+                    <div>
+                      <button class="view-job-btn border-0">
+                        <a href="#" class="text-decoration-none text-white"
+                          >View Job</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 my-3 px-3">
+                <div class="job-cards p-4 position-relative">
+                  <span class="bluebox position-absolute"></span>
+                  <div class="px-xxl-4">
+                    <p class="card-hadings mb-2 card-head-line">
+                      Pellentesque magna in lorem non dui. Enim, congue quis
+                      nisi fringilla. Sit semper rhoncus tristique non tellus,
+                      dictumst.
+                    </p>
+                    <p class="fixed-price">Fixed-Price</p>
+                    <p class="price">$100</p>
+                    <ul class="list-unstyled">
+                      <li class="d-flex justify-content-between">
+                        <p class="para mb-2">Start Date:</p>
+                        <p class="para mb-2">9/09/2021</p>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <p class="para mb-2">Deadline:</p>
+                        <p class="para mb-2">12/09/2021</p>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <p class="para">Deliveries Made:</p>
+                        <p class="para">2</p>
+                      </li>
+                    </ul>
+                    <div>
+                      <button class="view-job-btn border-0">
+                        <a href="#" class="text-decoration-none text-white"
+                          >View Job</a
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- my job section  -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
