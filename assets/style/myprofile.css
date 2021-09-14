@@ -1,0 +1,22 @@
+.name {
+  font-size: var(--font-39);
+  font-weight: 500;
+  color: var(--color-17191C);
+}
+.br-10 {
+  border-radius: 10px;
+}
+.past-work-hover:hover {
+  box-shadow: 0px 10px 15px #eff3f7;
+}
+.qualty {
+  font-size: var(--font-xxs);
+  font-weight: 500;
+  color: var(--color-5D5E60);
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1485px !important;
+    margin: 0 auto;
+  }
+}
