@@ -1,4 +1,5 @@
 :root {
+  --font-24: 24px;
   --color-fff: #ffffff;
   --color-DCDDDD: #dcdddd;
   --color-000000: #000000;
@@ -18,14 +19,24 @@ body {
 .search-icon {
   right: 20px;
 }
+.form-select:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
 .Sorting-btn {
+  font-size: var(--font-sms);
+  color: var(--color-8B8C8D);
+  font-weight: 500;
   border: 1px solid var(--color-E8E8E8);
 }
 .w-425 {
-  max-width: 425px;
+  width: 425px;
 }
 .w-129 {
   max-width: 129px;
+}
+.min-h-100 {
+  min-height: 100px;
 }
 .card-hadings {
   font-size: var(--font-sm);
@@ -83,8 +94,8 @@ body {
   background-color: #4694ee;
 }
 .bluebox {
-  top: 15px;
-  right: 18px;
+  top: 12px;
+  right: 15px;
   border-radius: 50%;
   height: 14px;
   width: 14px;
@@ -135,6 +146,12 @@ body {
   font-size: var(--font-sms);
   color: var(--color-fff) !important;
 }
+.delivery-btn:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #4694ee;
+  box-shadow: 0px 7px 20px -9px #96bfef;
+}
+
 /* ===========  modals  =================  */
 
 .modal-hading {
@@ -168,7 +185,22 @@ body {
   box-shadow: none !important;
 }
 .modal-header {
+  padding-bottom: 8px !important;
   border-bottom: none !important;
+}
+.modal-footer {
+  padding-top: 0px !important;
+  border-top: none !important;
+}
+.pb-6 {
+  padding-bottom: 6px !important;
+}
+.mx-523 {
+  max-width: 523px !important;
+}
+.focus:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /* ========================= */
@@ -193,8 +225,18 @@ body {
     --font-lg: 25px;
     --font-md: 19px;
     --font-sm: 15px;
+    --font-sms: 12px;
     --font-smll: 12px;
     --font-xs: 16px;
     --font-xxs: 10px;
+  }
+  .search-icon {
+    right: 10px;
+  }
+  .w-xs-100 {
+    width: 100%;
+  }
+  .w-425 {
+    max-width: 425px;
   }
 }
