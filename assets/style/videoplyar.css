@@ -1,0 +1,13 @@
+.mw-1320 {
+  max-width: 1320px !important;
+}
+.para {
+  font-size: var(--font-sms);
+  font-weight: 500;
+  color: var(--color-5D5E60);
+}
+.main-hadings {
+  font-size: var(--font-md);
+  font-weight: 600;
+  color: var(--color-000000);
+}
