@@ -173,6 +173,19 @@
 }
 
 /* DROPDOWN-BUTTON */
+/* Chrome, Safari, Edge, Opera */
+input[name=yourQuote]::-webkit-outer-spin-button,
+input[name=yourQuote]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    outline: none;
+}
+
+/* Firefox */
+input[name=yourQuote] {
+    -moz-appearance: textfield;
+    outline: none;
+}
+
 .sorting {
     outline: none;
     background-color: white;
@@ -323,8 +336,6 @@ label[for~="your-quote"]>input {
 .resize-none {
     resize: none;
 }
-
-
 
 /* MEDIA-QUARIES */
 @media (max-width: 768px) {
