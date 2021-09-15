@@ -5,8 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     /*mam/sir miane ye do properties use ki hai------>>>>>>>*/
-    transition: all 0.5s ease-in-out;
-    transition-delay: 0.2s;
+    transition: all 100ms ease-in-out;
     /*<<<<<<<<<-------*/
 }
 
@@ -252,6 +251,13 @@ textarea[placeholder="Message For Client"] {
     outline: none;
 }
 
+textarea[placeholder="Explain your report"] {
+    border: 1px solid var(--color-E8E8E8);
+    padding: 1em 1.5em;
+    border-radius: 3px;
+    outline: none;
+}
+
 label[for~="your-quote"] {
     outline: none;
     padding: 1em 1.5em;
@@ -282,6 +288,43 @@ label[for~="your-quote"]>input {
     top: 50%;
     transform: translate(-50%, -50%) !important;
 }
+
+.report-job {
+    padding: 1.5em 2em;
+    border-radius: 10px;
+}
+
+.report-job>ul>li>a {
+    text-decoration: none;
+    background-color: var(--color-F8F8F8);
+    border: 1px solid var(--color-E8E8E8);
+    border-radius: 56px;
+    color: var(--color-5D5E60);
+    padding: 0.5em 1em;
+}
+
+.report-job>ul>li>a:hover {
+    background-color: var(--color-5D5E60);
+    color: white;
+}
+
+.report-job>textarea {
+    margin-bottom: 1.625em;
+}
+
+.cancel {
+    background-color: var(--color-F8F8F8);
+    border: 1px solid var(--color-E8E8E8);
+    border-radius: 3px;
+    color: var(--color-5D5E60);
+    padding: 0.5em 1em;
+}
+
+.resize-none {
+    resize: none;
+}
+
+
 
 /* MEDIA-QUARIES */
 @media (max-width: 768px) {
