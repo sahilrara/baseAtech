@@ -74,8 +74,49 @@
                     <input name="your-quote" type="text" placeholder="Your Quote">
                 </label>
                 <p class="fs-16 fw-500 fc-5D5E60 ">Note: A-tech will charge 10% of your quote.</p>
-                <button class="larg-button mt-4">Apply For Job</button>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary larg-button mt-4" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    Apply
+                    For
+                    Job
+                </button>
             </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog my-modal">
+                    <!-- class="modal-title" id="staticBackdropLabel" -->
+                    <!-- class="btn-close" -->
+                    <div class="modal-content border-0">
+                        <div class="text-center job-applied bg-white position-relative">
+                            <button type="button" class="position-absolute bg-transparent border-0"
+                                data-bs-dismiss="modal" aria-label="Close">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18 35.5C15.7012 35.5023 13.4246 35.0512 11.3003 34.1725C9.17609 33.2939 7.24599 32.0049 5.62051 30.3795C3.99502 28.754 2.70607 26.8239 1.82743 24.6996C0.948786 22.5754 0.497707 20.2987 0.500009 18V17.65C0.570023 14.2189 1.64677 10.8841 3.59644 8.05999C5.5461 5.23587 8.2827 3.04696 11.4661 1.76531C14.6496 0.483658 18.1395 0.165781 21.502 0.851186C24.8646 1.53659 27.9517 3.19505 30.3795 5.62046C32.829 8.06791 34.4974 11.187 35.1735 14.5831C35.8495 17.9791 35.503 21.4993 34.1776 24.6983C32.8522 27.8973 30.6076 30.6312 27.7279 32.5539C24.8481 34.4767 21.4627 35.502 18 35.5ZM18 20.4675L22.5325 25L25 22.5325L20.4675 18L25 13.4675L22.5325 11L18 15.5325L13.4675 11L11 13.4675L15.5325 18L11 22.5325L13.4675 25L18 20.4692V20.4675Z"
+                                        fill="#5D5E60" />
+                                </svg>
+                            </button>
+                            <img class="w-100" src="./assets/img/JOB-APPLIED-SUCCESSFULL.png"
+                                alt="job-applied-successfull">
+                            <div class="fs-31 fw-600 fc-17191C">Job Applied Successfull</div>
+                            <p class="fw-500 fs-16 fc-5D5E60">Thankyou for applying for this job</p>
+                            <button type="button" class="small-button text-decoration-none"
+                                data-bs-dismiss="modal">Return to
+                                job feed</button>
+                        </div>
+                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button> -->
+                        <!-- <div class="modal-footer"> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 

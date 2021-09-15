@@ -265,6 +265,24 @@ label[for~="your-quote"]>input {
     border: none;
 }
 
+.job-applied {
+    padding: 2em 4.5em;
+    border-radius: 10px;
+}
+
+.modal-content>div.text-center>button {
+    right: 20px;
+    top: 20px;
+}
+
+.my-modal {
+    margin: 0;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+}
+
 /* MEDIA-QUARIES */
 @media (max-width: 768px) {
     :root {
