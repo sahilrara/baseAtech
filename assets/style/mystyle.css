@@ -118,6 +118,10 @@
     color: var(--color-5D5E60);
 }
 
+.fc-8B8C8D {
+    color: var(--color-8B8C8D);
+}
+
 /* -------------POST------------- */
 .post {
     border: 1px solid #DCDDDD !important;
@@ -218,6 +222,7 @@
     align-items: center;
     display: flex;
     text-decoration: none;
+    outline: none;
 }
 
 .respons-button:hover {
@@ -237,6 +242,27 @@
     box-shadow: 0px 3px 15px #EFF3F7;
     border-radius: 10px;
     outline: none;
+}
+
+/* -----------APPLY-FOR-JOB-PAGE----------- */
+textarea[placeholder="Message For Client"] {
+    border: 1px solid var(--color-E8E8E8);
+    padding: 1em 1.5em;
+    border-radius: 3px;
+    outline: none;
+}
+
+label[for~="your-quote"] {
+    outline: none;
+    padding: 1em 1.5em;
+    border: 1px solid var(--color-E8E8E8);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+label[for~="your-quote"]>input {
+    outline: none;
+    border: none;
 }
 
 /* MEDIA-QUARIES */
