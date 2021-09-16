@@ -177,13 +177,11 @@
 input[name=yourQuote]::-webkit-outer-spin-button,
 input[name=yourQuote]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    outline: none;
 }
 
 /* Firefox */
 input[name=yourQuote] {
     -moz-appearance: textfield;
-    outline: none;
 }
 
 .sorting {
@@ -271,7 +269,7 @@ textarea[placeholder="Explain your report"] {
     outline: none;
 }
 
-label[for~="your-quote"] {
+label[for~="yourQuote"] {
     outline: none;
     padding: 1em 1.5em;
     border: 1px solid var(--color-E8E8E8);
@@ -279,7 +277,7 @@ label[for~="your-quote"] {
     border-radius: 3px;
 }
 
-label[for~="your-quote"]>input {
+label[for~="yourQuote"]>input {
     outline: none;
     border: none;
 }
