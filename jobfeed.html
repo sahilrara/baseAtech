@@ -28,8 +28,21 @@
                         fill="#127CF9" />
                 </svg>
 
+                <div
+                    class="rounded-pill position-relative align-items-center justify-content-between creator d-flex rounded-pill">
+                    <img src="./assets/img/creator.png" alt="user-img">
+                    <div class="fs-16 fw-500">Creator</div>
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
 
-                <div class="dropdown rounded-pill creator">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="dropdown rounded-pill creator">
                     <img src="./assets/img/creator.png" alt="user-img">
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -40,11 +53,20 @@
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
             <div class="row my-2 align-items-center text-end gap-2 gap-lg-0 justify-content-sm-between">
-                <div class="col-12 col-sm-4 text-md-start">
-                    <input class="rounded-pill " type="search" placeholder="Search For Job...">
+                <div class="col-12 col-sm-5 text-md-start">
+                    <div class="rounded-pill w-100 position-relative search-input">
+                        <input type="search" placeholder="Search For Job...">
+                        <svg class="search-icon" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 16C9.77498 15.9996 11.4988 15.4054 12.897 14.312L17.293 18.708L18.707 17.294L14.311 12.898C15.405 11.4997 15.9996 9.77544 16 8C16 3.589 12.411 0 8 0C3.589 0 0 3.589 0 8C0 12.411 3.589 16 8 16ZM8 2C11.309 2 14 4.691 14 8C14 11.309 11.309 14 8 14C4.691 14 2 11.309 2 8C2 4.691 4.691 2 8 2Z"
+                                fill="#8B8C8D" />
+                        </svg>
+                    </div>
+
                 </div>
                 <div class="col-12 col-sm-4">
                     <div class="dropdown d-inline-block">

@@ -158,10 +158,10 @@ body {
 }
 
 .small-button:hover {
-    box-shadow: 0px 4px 10px -9px #96BFEF;
+    box-shadow: 0px 4px 10px 1px #96BFEF !important;
 }
 
-.larg-button {
+.large-button {
     font-size: 16px;
     font-weight: 600;
     padding: 1em 1.5em;
@@ -173,8 +173,8 @@ body {
     outline: none;
 }
 
-.larg-button:hover {
-    box-shadow: 0px 4px 10px -9px #96BFEF;
+.large-button:hover {
+    box-shadow: 0px 4px 10px 1px #96BFEF !important;
 }
 
 /* DROPDOWN-BUTTON */
@@ -195,11 +195,6 @@ input[name=yourQuote] {
     transition: all 100ms ease-in-out !important;
 }
 
-.sorting>ul:focus {
-    box-shadow: none;
-    outline: none;
-}
-
 .creator {
     padding: 0.25em 0.25em;
     width: 200px;
@@ -213,13 +208,27 @@ input[name=yourQuote] {
     outline: none;
 }
 
-.bg-E5E5E5 input[type="search"] {
+/* input[type="search"] */
+.search-input {
     background: #FFFFFF;
     border: 1px solid #E8E8E8;
     box-sizing: border-box;
     color: #8B8C8D;
     padding: 1em 1.25em;
     outline: none;
+}
+
+.search-input>input[type="search"] {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
 }
 
 .bg-E5E5E5 svg {
