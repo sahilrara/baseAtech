@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/style/chat.css" />
+  <title>a tech chat page</title>
+</head>
+
+<body>
+  <section>
+    <div class="mx-1920 bg-e5e5e5  d-xl-flex vh-100 ">
+      <!-- SIDEBAR -->
+      <div class="navigation sidebar-close   d-flex flex-column pt-30 pt-sm-3 pt-2  ">
+        <div class="mx-auto mb-4 pt-3"> <span>
+            <div class="hamburger-2 d-block d-xl-none" id="hamburger-4">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+
+
+          </span> <img src="./assets/chatimg/Logo.png" alt="" /> </div>
+        <a href=" #" class="fs-16-500 color-8b8c8d">
+          <svg class="me-xxl-4 me-3" width="18" height="18" viewBox="0 0 18 18" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 18H10V12H18V18ZM8 18H0V8H8V18ZM18 10H10V0H18V10ZM8 6H0V0H8V6Z" fill="#8B8C8D" />
+          </svg>
+
+          Dashboard</a>
+        <a href=" #" class="fs-16-500 color-8b8c8d">
+          <svg class="me-xxl-4 me-3" width="20" height="16" viewBox="0 0 20 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.2"
+              d="M10.552 4C10.2868 4 10.0324 4.10536 9.8449 4.29289C9.65736 4.48043 9.552 4.73478 9.552 5C9.552 5.26522 9.65736 5.51957 9.8449 5.70711C10.0324 5.89464 10.2868 6 10.552 6H14.552C14.8172 6 15.0716 5.89464 15.2591 5.70711C15.4466 5.51957 15.552 5.26522 15.552 5C15.552 4.73478 15.4466 4.48043 15.2591 4.29289C15.0716 4.10536 14.8172 4 14.552 4H10.552Z"
+              fill="#8B8C8D" />
+            <path opacity="0.2"
+              d="M10.552 13C10.2868 13 10.0324 13.1054 9.8449 13.2929C9.65736 13.4804 9.552 13.7348 9.552 14C9.552 14.2652 9.65736 14.5196 9.8449 14.7071C10.0324 14.8946 10.2868 15 10.552 15H14.552C14.8172 15 15.0716 14.8946 15.2591 14.7071C15.4466 14.5196 15.552 14.2652 15.552 14C15.552 13.7348 15.4466 13.4804 15.2591 13.2929C15.0716 13.1054 14.8172 13 14.552 13H10.552Z"
+              fill="#8B8C8D" />
+            <path
+              d="M10.552 1C10.2868 1 10.0324 1.10536 9.8449 1.29289C9.65736 1.48043 9.552 1.73478 9.552 2C9.552 2.26522 9.65736 2.51957 9.8449 2.70711C10.0324 2.89464 10.2868 3 10.552 3H18.552C18.8172 3 19.0716 2.89464 19.2591 2.70711C19.4466 2.51957 19.552 2.26522 19.552 2C19.552 1.73478 19.4466 1.48043 19.2591 1.29289C19.0716 1.10536 18.8172 1 18.552 1H10.552Z"
+              fill="#8B8C8D" />
+            <path
+              d="M10.552 10C10.2868 10 10.0324 10.1054 9.8449 10.2929C9.65736 10.4804 9.552 10.7348 9.552 11C9.552 11.2652 9.65736 11.5196 9.8449 11.7071C10.0324 11.8946 10.2868 12 10.552 12H18.552C18.8172 12 19.0716 11.8946 19.2591 11.7071C19.4466 11.5196 19.552 11.2652 19.552 11C19.552 10.7348 19.4466 10.4804 19.2591 10.2929C19.0716 10.1054 18.8172 10 18.552 10H10.552Z"
+              fill="#8B8C8D" />
+            <path
+              d="M1.448 0.00195312C1.18278 0.00195312 0.928428 0.10731 0.740891 0.294847C0.553355 0.482383 0.447998 0.736737 0.447998 1.00195V6.00195C0.447998 6.26717 0.553355 6.52152 0.740891 6.70906C0.928428 6.8966 1.18278 7.00195 1.448 7.00195H6.448C6.71321 7.00195 6.96757 6.8966 7.1551 6.70906C7.34264 6.52152 7.448 6.26717 7.448 6.00195V1.00195C7.448 0.736737 7.34264 0.482383 7.1551 0.294847C6.96757 0.10731 6.71321 0.00195312 6.448 0.00195312H1.448Z"
+              fill="#8B8C8D" />
+            <path
+              d="M1.448 8.99805C1.18278 8.99805 0.928428 9.1034 0.740891 9.29094C0.553355 9.47848 0.447998 9.73283 0.447998 9.99805V14.998C0.447998 15.2633 0.553355 15.5176 0.740891 15.7052C0.928428 15.8927 1.18278 15.998 1.448 15.998H6.448C6.71321 15.998 6.96757 15.8927 7.1551 15.7052C7.34264 15.5176 7.448 15.2633 7.448 14.998V9.99805C7.448 9.73283 7.34264 9.47848 7.1551 9.29094C6.96757 9.1034 6.71321 8.99805 6.448 8.99805H1.448Z"
+              fill="#8B8C8D" />
+          </svg>
+          Job Feed</a>
+        <a href=" #" class="fs-16-500 color-8b8c8d">
+          <svg class="me-xxl-4 me-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19 3H5C4.20435 3 3.44129 3.31607 2.87868 3.87868C2.31607 4.44129 2 5.20435 2 6V21C2.00031 21.1772 2.04769 21.3511 2.1373 21.504C2.22691 21.6569 2.35553 21.7832 2.51 21.87C2.65946 21.9547 2.82821 21.9995 3 22C3.17948 21.9999 3.35564 21.9516 3.51 21.86L8 19.14C8.16597 19.0412 8.35699 18.9926 8.55 19H19C19.7956 19 20.5587 18.6839 21.1213 18.1213C21.6839 17.5587 22 16.7956 22 16V6C22 5.20435 21.6839 4.44129 21.1213 3.87868C20.5587 3.31607 19.7956 3 19 3ZM8 12C7.80222 12 7.60888 11.9414 7.44443 11.8315C7.27998 11.7216 7.15181 11.5654 7.07612 11.3827C7.00043 11.2 6.98063 10.9989 7.01921 10.8049C7.0578 10.6109 7.15304 10.4327 7.29289 10.2929C7.43275 10.153 7.61093 10.0578 7.80491 10.0192C7.99889 9.98063 8.19996 10.0004 8.38268 10.0761C8.56541 10.1518 8.72159 10.28 8.83147 10.4444C8.94135 10.6089 9 10.8022 9 11C9 11.2652 8.89464 11.5196 8.70711 11.7071C8.51957 11.8946 8.26522 12 8 12ZM12 12C11.8022 12 11.6089 11.9414 11.4444 11.8315C11.28 11.7216 11.1518 11.5654 11.0761 11.3827C11.0004 11.2 10.9806 10.9989 11.0192 10.8049C11.0578 10.6109 11.153 10.4327 11.2929 10.2929C11.4327 10.153 11.6109 10.0578 11.8049 10.0192C11.9989 9.98063 12.2 10.0004 12.3827 10.0761C12.5654 10.1518 12.7216 10.28 12.8315 10.4444C12.9414 10.6089 13 10.8022 13 11C13 11.2652 12.8946 11.5196 12.7071 11.7071C12.5196 11.8946 12.2652 12 12 12ZM16 12C15.8022 12 15.6089 11.9414 15.4444 11.8315C15.28 11.7216 15.1518 11.5654 15.0761 11.3827C15.0004 11.2 14.9806 10.9989 15.0192 10.8049C15.0578 10.6109 15.153 10.4327 15.2929 10.2929C15.4327 10.153 15.6109 10.0578 15.8049 10.0192C15.9989 9.98063 16.2 10.0004 16.3827 10.0761C16.5654 10.1518 16.7216 10.28 16.8315 10.4444C16.9414 10.6089 17 10.8022 17 11C17 11.2652 16.8946 11.5196 16.7071 11.7071C16.5196 11.8946 16.2652 12 16 12Z"
+              fill="#8B8C8D" />
+          </svg>
+          Messages</a>
+      </div>
+      <div class="container ">
+        <!-- NAVBAR  -->
+        <div class="container  max-w-xxxl-1485  pt-30  pt-3 d-flex justify-content-between">
+
+          <div class="hamburger d-block d-xl-none mt-2" id="hamburger-3">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+
+          <div>
+            <h1 class="fs-39-500 color-17191c d-none d-md-block ">Messages </h1>
+          </div>
+          <div class="  d-flex">
+            <div><img class="mt-3" src="./assets/chatimg/notification.png" alt=""></div>
+            <div class="dropdown  ms-sm-4 ms-3   ">
+              <button class="
+                    btn creator
+                    fs-16-500 color-17191c
+                    form-select
+                    py-1
+                    ps-1
+                    pe-5  
+                    rounded-pill
+                    bg-white
+                  " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="me-3" src="./assets/chatimg/Ellipse 2nav-dp.png" alt="">
+                Creator
+              </button>
+              <ul class="dropdown-menu ps-4" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Name</a></li>
+                <li><a class="dropdown-item" href="#">Date</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Type</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+        <!-- chat section start  -->
+
+        <div class="container  max-w-xxxl-1485 p-xxl-3 my-4 bg-white vh-60 br-10">
+          <div class="px-xxl-3 px-2 py-2">
+            <div class="row">
+              <!-- CHAT USERS  -->
+              <div class="col-xxl-3 col-md-4  col-sm-4 pe-lg-4  border-end-e8e8e8 chat-users">
+                <ul class="list-unstyled">
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 3user (1).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name "> Alena Levin </span></div>
+                    <div class="ms-auto">
+                      <span class="msg-numbers fs-16-500 color-88befc float-end text-center pt-1 mt-md-2">
+                        3</span>
+                    </div>
+                  </li>
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 3user (2).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Cristofer Carder</span></div>
+                    <div class="ms-auto"> <span
+                        class="msg-numbers fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2"> 3</span>
+                    </div>
+                  </li>
+                  <li class="people d-flex align-items-center people-active">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 31 (1).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Cheyenne Torff</span></div>
+                    <div class="ms-auto"> <span
+                        class="msg-numbers fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2"> 3</span>
+                    </div>
+                  </li>
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 31 (2).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Mira Dorwart</span></div>
+                    <div class="ms-auto"> <span
+                        class="msg-numbers fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2"> 3</span>
+                    </div>
+                  </li>
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 31 (3).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Craig Torff</span></div>
+                    <div class="ms-auto"> <span
+                        class="msg-numbers fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2"> 3</span>
+                    </div>
+                  </li>
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 31 (4).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Allison Herwitz</span></div>
+                    <div class="ms-auto"> <span
+                        class="msg-numbers-new msg-numbers  fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2">
+                        3</span></div>
+                  </li>
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 31.png" alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Wilson Curtis</span></div>
+                    <div class="ms-auto"> <span
+                        class="msg-numbers fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2"> 3</span>
+                    </div>
+                  </li>
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 31 (2).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Mira Dorwart</span></div>
+                    <div class="ms-auto"> <span
+                        class="msg-numbers fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2"> 3</span>
+                    </div>
+                  </li>
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 3user (1).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name "> Alena Levin </span></div>
+                    <div class="ms-auto">
+                      <span class="msg-numbers fs-16-500 color-88befc float-end text-center pt-1 mt-md-2">
+                        3</span>
+                    </div>
+                  </li>
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 3user (2).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Cristofer Carder</span></div>
+                    <div class="ms-auto"> <span
+                        class="msg-numbers fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2"> 3</span>
+                    </div>
+                  </li>
+                  <li class="people d-flex align-items-center ">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 31 (1).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Cheye Torff</span></div>
+                    <div class="ms-auto"> <span
+                        class="msg-numbers fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2"> 3</span>
+                    </div>
+                  </li>
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 31 (2).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Mira Dorwart</span></div>
+                    <div class="ms-auto"> <span
+                        class="msg-numbers fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2"> 3</span>
+                    </div>
+                  </li>
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 31 (3).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Craig Torff</span></div>
+                    <div class="ms-auto"> <span
+                        class="msg-numbers fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2"> 3</span>
+                    </div>
+                  </li>
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 31 (4).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Allison Herwitz</span></div>
+                    <div class="ms-auto"> <span
+                        class="  msg-numbers  fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2">
+                        3</span></div>
+                  </li>
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 31.png" alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Wilson Curtis</span></div>
+                    <div class="ms-auto"> <span
+                        class="msg-numbers fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2"> 3</span>
+                    </div>
+                  </li>
+                  <li class="people d-flex align-items-center">
+                    <div> <span><img class="me-lg-4 me-2 w-75" src="./assets/chatimg/Ellipse 31 (2).png"
+                          alt="img"></span>
+                    </div>
+                    <div> <span class="fs-16-500 color-17191c people-name"> Mira Dorwart</span></div>
+                    <div class="ms-auto"> <span
+                        class="msg-numbers fs-16-500 color-88befc  float-end text-center pt-1 mt-md-2"> 3</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- CHAT  -->
+              <div class="col-xxl-9 col-md-8 col-sm-8  ps-lg-4 open-chat-person">
+                <div class="mt-16 mt-2  border-bottom-e8e8e8 pb-3 mb-xxl-2 mb-1 ">
+                  <span> <img class="me-md-4 me-3  " src="./assets/chatimg/Ellipse 31 (1).png" alt=""></span>
+                  <span class="fs-25-600 color-17191c "> Cheyenne Torff</span>
+                  <button class="   float-end border-0 bg-transparent  ">
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8 4C8.53043 4 9.03914 3.78929 9.41421 3.41421C9.78929 3.03914 10 2.53043 10 2C10 1.46957 9.78929 0.96086 9.41421 0.585787C9.03914 0.210714 8.53043 0 8 0C7.46957 0 6.96086 0.210714 6.58579 0.585787C6.21071 0.96086 6 1.46957 6 2C6 2.53043 6.21071 3.03914 6.58579 3.41421C6.96086 3.78929 7.46957 4 8 4ZM2 4C2.53043 4 3.03914 3.78929 3.41421 3.41421C3.78929 3.03914 4 2.53043 4 2C4 1.46957 3.78929 0.96086 3.41421 0.585787C3.03914 0.210714 2.53043 0 2 0C1.46957 0 0.960859 0.210714 0.585786 0.585787C0.210714 0.96086 0 1.46957 0 2C0 2.53043 0.210714 3.03914 0.585786 3.41421C0.960859 3.78929 1.46957 4 2 4ZM14 4C14.5304 4 15.0391 3.78929 15.4142 3.41421C15.7893 3.03914 16 2.53043 16 2C16 1.46957 15.7893 0.96086 15.4142 0.585787C15.0391 0.210714 14.5304 0 14 0C13.4696 0 12.9609 0.210714 12.5858 0.585787C12.2107 0.96086 12 1.46957 12 2C12 2.53043 12.2107 3.03914 12.5858 3.41421C12.9609 3.78929 13.4696 4 14 4Z"
+                        fill="#17191C" />
+                    </svg>
+                  </button>
+                </div>
+                <!-- chat box -->
+                <div class="my-xxl-3 my-2 mt-xxl-4 d-flex flex-column pe-xxl-5   pe-3 chat-box">
+                  <div class=" my-2"> <span class="fs-16-500 color-17191c you">Orci, arcu nec
+                      sit integer nisl eu
+                      morbi</span>
+                  </div>
+                  <div class="my-2"> <span class="  fs-16-500 color-fff    me"> Orci, arcu nec sit integer nisl eu
+                      morbi</span>
+                  </div>
+                  <div class="my-2"> <span class="  fs-16-500 color-17191c you"> At bibendum urna, faucibus dolor
+                      cursus tincidunt congue</span>
+                  </div>
+                  <div class="my-2"> <span class="  fs-16-500 color-fff    me"> Potenti vel eu magna fermentum eleifend
+                      congue dui</span>
+                  </div>
+                  <div class="my-2"> <span class="  fs-16-500 color-17191c you"> At bibendum urna, faucibus dolor
+                      cursus tincidunt congue</span>
+                  </div>
+
+                  <div class="my-2"> <span class="  fs-16-500 color-fff    me"> Justo id in sit convallis faucibus arcu,
+                      amet</span>
+                  </div>
+                  <div class="my-2 "><img class="" src="./assets/chatimg/Group 68.png" alt=""></div>
+
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Orci, arcu nec sit integer nisl eu
+                      morbi</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Potenti vel eu magna fermentum
+                      eleifend
+                      congue dui</span>
+                  </div>
+                  <div class="my-2 "><img class="float-end" src="./assets/chatimg/Group 68.png" alt=""></div>
+
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor viverra in
+                      sed leo id</span>
+                  </div>
+
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor viverra
+                      in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor viverra
+                      in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor viverra
+                      in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-fff    me"> Lorem vulputate porttitor viverra
+                      in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor viverra
+                      in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor viverra
+                      in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor
+                      viverra in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-2"> <span class="  fs-16-500 color-fff    me"> Lorem vulputate porttitor
+                      viverra in
+                      sed leo id</span>
+                  </div>
+                  <div class=" my-2"> <span class="fs-16-500 color-17191c you">Orci, arcu nec
+                      sit integer nisl eu
+                      morbi</span>
+                  </div>
+                  <div class="my-2"> <span class="  fs-16-500 color-fff    me"> Orci, arcu nec sit integer nisl eu
+                      morbi</span>
+                  </div>
+                  <div class="my-2"> <span class="  fs-16-500 color-17191c you"> At bibendum urna, faucibus dolor
+                      cursus tincidunt congue</span>
+                  </div>
+                  <div class="my-2"> <span class="  fs-16-500 color-fff    me"> Potenti vel eu magna fermentum eleifend
+                      congue dui</span>
+                  </div>
+                  <div class="my-2"> <span class="  fs-16-500 color-17191c you"> At bibendum urna, faucibus dolor
+                      cursus tincidunt congue</span>
+                  </div>
+
+                  <div class="my-2"> <span class="  fs-16-500 color-fff    me"> Justo id in sit convallis faucibus
+                      arcu,
+                      amet</span>
+                  </div>
+                  <div class="my-2 "><img class="" src="./assets/chatimg/Group 68.png" alt=""></div>
+
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Orci, arcu nec sit integer nisl eu
+                      morbi</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Potenti vel eu magna fermentum
+                      eleifend
+                      congue dui</span>
+                  </div>
+                  <div class="my-2 "><img class="float-end" src="./assets/chatimg/Group 68.png" alt=""></div>
+
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor viverra
+                      in
+                      sed leo id</span>
+                  </div>
+
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor viverra
+                      in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor viverra
+                      in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor viverra
+                      in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-fff    me"> Lorem vulputate porttitor viverra
+                      in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor viverra
+                      in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor viverra
+                      in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-3"> <span class="  fs-16-500 color-17191c    you"> Lorem vulputate porttitor
+                      viverra in
+                      sed leo id</span>
+                  </div>
+                  <div class="my-2"> <span class="  fs-16-500 color-fff    me"> Lorem vulputate porttitor
+                      viverra in
+                      sed leo id</span>
+                  </div>
+
+                </div>
+
+                <!-- msg send input  -->
+
+                <div class="msg-send-input w-100">
+                  <img class="me-xxl-3 me-2" src="./assets/chatimg/Ellipse 2nav-dp.png" alt=""> <input
+                    class="fs-16-500 color-8b8c8d border-0 w-25" type="text" placeholder="Type your message here...">
+                  <div class=" float-end d-flex">
+                    <button class="  Attachment me-2 d-none d-lg-block">
+                      <input type="file" hidden id="my-input">
+                      <label for="my-input" class=" fs-16-500 color-5d5e60">
+                        <svg class=" me-xxl-3 me-2" width="22" height="24" viewBox="0 0 22 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.129 2.68558C14.3656 2.64067 13.5154 2.89879 12.7073 3.70691L3.7073 12.7069C2.39918 14.015 1.95356 15.4277 2.02972 16.7223C2.10732 18.0416 2.73296 19.3184 3.7073 20.2927C4.68163 21.267 5.95843 21.8927 7.27766 21.9703C8.57232 22.0464 9.98496 21.6008 11.2931 20.2927L20.2931 11.2927L21.7073 12.7069L12.7073 21.7069C11.0154 23.3988 9.05307 24.0782 7.16022 23.9668C5.29195 23.8569 3.56875 22.9826 2.29308 21.7069C1.01742 20.4312 0.143065 18.708 0.033167 16.8398C-0.0781768 14.9469 0.601206 12.9846 2.29308 11.2927L11.2931 2.2927C12.485 1.10082 13.8848 0.608938 15.2464 0.689032C16.5834 0.76768 17.8066 1.39204 18.7073 2.2927C19.608 3.19336 20.2323 4.41657 20.311 5.75358C20.3911 7.11518 19.8992 8.51504 18.7073 9.70691L9.7073 18.7069C9.01542 19.3988 8.17807 19.7032 7.34772 19.6543C6.54195 19.6069 5.81875 19.2326 5.29309 18.7069C4.76742 18.1812 4.39307 17.458 4.34567 16.6523C4.29682 15.8219 4.60121 14.9846 5.29309 14.2927L14.2931 5.2927L15.7073 6.70691L6.7073 15.7069C6.39918 16.015 6.32856 16.3027 6.34222 16.5348C6.35732 16.7916 6.48296 17.0684 6.7073 17.2927C6.93163 17.517 7.20843 17.6427 7.46516 17.6578C7.69732 17.6714 7.98496 17.6008 8.29309 17.2927L17.2931 8.2927C18.1012 7.48458 18.3593 6.63443 18.3144 5.87103C18.2681 5.08304 17.8924 4.30625 17.2931 3.70691C16.6937 3.10758 15.917 2.73193 15.129 2.68558Z"
+                            fill="#5D5E60" />
+                        </svg>
+                        Attachment </label>
+                    </button>
+                    <button class="border-0 bg-transparent  me-2 d-block d-lg-none my-2">
+                      <input type="file" hidden id="my-input">
+                      <label for="my-input" class=" fs-16-500 color-5d5e60">
+                        <svg class=" me-xxl-3 me-2" width="22" height="24" viewBox="0 0 22 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.129 2.68558C14.3656 2.64067 13.5154 2.89879 12.7073 3.70691L3.7073 12.7069C2.39918 14.015 1.95356 15.4277 2.02972 16.7223C2.10732 18.0416 2.73296 19.3184 3.7073 20.2927C4.68163 21.267 5.95843 21.8927 7.27766 21.9703C8.57232 22.0464 9.98496 21.6008 11.2931 20.2927L20.2931 11.2927L21.7073 12.7069L12.7073 21.7069C11.0154 23.3988 9.05307 24.0782 7.16022 23.9668C5.29195 23.8569 3.56875 22.9826 2.29308 21.7069C1.01742 20.4312 0.143065 18.708 0.033167 16.8398C-0.0781768 14.9469 0.601206 12.9846 2.29308 11.2927L11.2931 2.2927C12.485 1.10082 13.8848 0.608938 15.2464 0.689032C16.5834 0.76768 17.8066 1.39204 18.7073 2.2927C19.608 3.19336 20.2323 4.41657 20.311 5.75358C20.3911 7.11518 19.8992 8.51504 18.7073 9.70691L9.7073 18.7069C9.01542 19.3988 8.17807 19.7032 7.34772 19.6543C6.54195 19.6069 5.81875 19.2326 5.29309 18.7069C4.76742 18.1812 4.39307 17.458 4.34567 16.6523C4.29682 15.8219 4.60121 14.9846 5.29309 14.2927L14.2931 5.2927L15.7073 6.70691L6.7073 15.7069C6.39918 16.015 6.32856 16.3027 6.34222 16.5348C6.35732 16.7916 6.48296 17.0684 6.7073 17.2927C6.93163 17.517 7.20843 17.6427 7.46516 17.6578C7.69732 17.6714 7.98496 17.6008 8.29309 17.2927L17.2931 8.2927C18.1012 7.48458 18.3593 6.63443 18.3144 5.87103C18.2681 5.08304 17.8924 4.30625 17.2931 3.70691C16.6937 3.10758 15.917 2.73193 15.129 2.68558Z"
+                            fill="#5D5E60" />
+                        </svg>
+                      </label>
+                    </button>
+                    <button class="fs-16-600 color-fff send-message d-none d-lg-block "> Send Message </button>
+                    <button class="fs-16-600 border-0 bg-transparent d-block d-lg-none my-2 me-2 color-17191c"> send
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+  </script>
+
+  <SCript>
+    $(document).ready(function () {
+      $(".hamburger").click(function () {
+        $(this).toggleClass("is-active");
+
+      });
+    });
+
+
+    const navigation = document.querySelector(".navigation")
+    const humburger = document.querySelector(".hamburger")
+    humburger.addEventListener("click", () => {
+      console.log("sidebar open");
+      navigation.classList.add("sidebar-open")
+
+    })
+
+    const humburgerTwo = document.querySelector(".hamburger-2")
+    humburgerTwo.addEventListener("click", () => {
+      console.log("sidebar close");
+      navigation.classList.remove("sidebar-open")
+
+    })
+    const people = document.querySelector('.people');
+    const chatOpen = document.querySelector('.open-chat-person')
+    const peopleHide = document.querySelector('.chat-users');
+    people.addEventListener("click", () => {
+      console.log("open people chat");
+      chatOpen.classList.remove("open-chat-person")
+      peopleHide.classList.add("d-none")
+
+    })
+
+
+    // =========//
+  </SCript>
+</body>
+
+</html>

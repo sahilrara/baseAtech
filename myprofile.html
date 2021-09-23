@@ -1,233 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/style/style.css" />
-    <link rel="stylesheet" href="./assets/style/vipin.css" />
-    <link rel="stylesheet" href="./assets/style/myprofile.css" />
-    <title>a tech my profile</title>
-  </head>
-  <body>
-    <section>
-      <div class="container bg-white p-2">
-        <div class="p-xl-4 p-3">
-          <!-- profile  -->
-          <div class="row">
-            <div class="col-xl-3 col-sm-4 col-5 mx-auto">
-              <img
-                class="w-100 br-50"
-                src="./assets/img/Rectangle 103Jeremy Rose.png"
-                alt=""
-              />
-            </div>
-            <div
-              class="
-                col-xl-9 col-sm-8 col-12
-                my-auto
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/style/style.css" />
+  <link rel="stylesheet" href="./assets/style/vipin.css" />
+  <link rel="stylesheet" href="./assets/style/myprofile.css" />
+  <title>a tech my profile</title>
+</head>
+
+<body>
+  <section>
+    <div class="container bg-white p-2 my-5">
+      <div class="p-xl-4 p-3">
+        <!-- profile  -->
+        <div class="row">
+          <div class="col-xl-3  col-sm-4 col-12 text-center text-sm-start">
+            <img class="profile-img br-50 " src="./assets/img/Rectangle 103Jeremy Rose.png" alt="" />
+          </div>
+          <div class="
+                col-xl-9   col-sm-8 col-12
+                 
                 ps-xl-5 ps-sm-3
                 d-flex
                 flex-column
-              "
-            >
-              <div class="text-center text-sm-end">
-                <button
-                  class="view-job-btn py-2 px-3 border-0 mb-1 mt-3 mt-sm-0"
-                >
-                  Edit Profile
-                </button>
-              </div>
-              <div class="text-center text-sm-start">
-                <p class="name mb-1">Jeremy Rose</p>
-                <p class="light-para mb-2 mb-sm-3">Graphic Designer</p>
-                <p class="para">
-                  <svg
-                    class="me-3"
-                    width="15"
-                    height="20"
-                    viewBox="0 0 15 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+              ">
+            <div class="text-center text-sm-end">
+              <a href="./editprofile.html" class="text-decoration-none"> <button
+                  class="view-job-btn py-2 px-3 border-0 mb-xxl-5 mb-md-3 mt-4 mt-sm-0 br-3">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M7.5 0C5.5116 0.00245748 3.60531 0.831051 2.1993 2.30402C0.793282 3.77699 0.00235375 5.77405 7.97923e-06 7.85714C-0.00237354 9.55945 0.528403 11.2156 1.51092 12.5714C1.51092 12.5714 1.71546 12.8536 1.74887 12.8943L7.5 20L13.2539 12.8907C13.2839 12.8529 13.4891 12.5714 13.4891 12.5714L13.4898 12.5693C14.4718 11.214 15.0023 9.55866 15 7.85714C14.9976 5.77405 14.2067 3.77699 12.8007 2.30402C11.3947 0.831051 9.4884 0.00245748 7.5 0ZM7.5 10.7143C6.9606 10.7143 6.43331 10.5467 5.98481 10.2328C5.53631 9.91882 5.18675 9.4726 4.98033 8.95052C4.77391 8.42845 4.7199 7.85397 4.82513 7.29974C4.93037 6.74551 5.19011 6.23642 5.57153 5.83684C5.95294 5.43726 6.4389 5.16514 6.96794 5.0549C7.49697 4.94466 8.04534 5.00124 8.54368 5.21749C9.04202 5.43374 9.46797 5.79994 9.76764 6.2698C10.0673 6.73965 10.2273 7.29205 10.2273 7.85714C10.2264 8.61461 9.93874 9.34079 9.42747 9.8764C8.91621 10.412 8.22304 10.7133 7.5 10.7143Z"
-                      fill="#5D5E60"
-                    />
+                      d="M16 2H8C4.691 2 2 4.691 2 8V21C2 21.2652 2.10536 21.5196 2.29289 21.7071C2.48043 21.8946 2.73478 22 3 22H16C19.309 22 22 19.309 22 16V8C22 4.691 19.309 2 16 2ZM8.999 17H7V15.001L12.53 9.479L14.529 11.478L8.999 17ZM15.472 10.535L13.473 8.536L14.997 7.013L16.996 9.012L15.472 10.535Z"
+                      fill="white" />
                   </svg>
-                  Delta, Canada
-                </p>
-              </div>
+
+                  Edit Profile
+                </button></a>
             </div>
-          </div>
-          <div class="hr my-4"></div>
-          <p class="card-hadings">Bio</p>
-          <p class="para">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum,
-            tortor vitae tempus arcu facilisis. Amet, et ut tortor integer
-            ultrices proin. Nisl id id est enim ipsum ultricies maecenas. Magna
-            at euismod nec tincidunt iaculis quam. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Fermentum, tortor vitae tempus arcu
-            facilisis. Amet, et ut tortor integer ultrices proin. Nisl id id est
-            enim ipsum ultricies maecenas. Magna at euismod nec tincidunt
-            iaculis quam.Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Fermentum, tortor vitae tempus arcu facilisis. Amet, et ut
-            tortor integer ultrices proin. Nisl id id est enim ipsum ultricies
-            maecenas. Magna at euismod nec tincidunt iaculis quam.
-          </p>
-          <div class="hr my-4"></div>
-          <p class="card-hadings pb-sm-2">Past Work</p>
-          <div class="row border-e8e8e8 past-work-hover br-10 my-4">
-            <div
-              class="col-lg-3 col-sm-4 col-10 mx-auto my-3 my-xxl-auto ps-xxl-0"
-            >
-              <div
-                class="position-relative d-flex flex-column justify-content-end"
-              >
-                <img src="./assets/img/Rectangle 92.png" alt="" />
-                <img
-                  class="position-absolute mb-3 ms-3"
-                  src="./assets/img/play.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div
-              class="col-lg-9 col-sm-8 col-12 ps-xl-5 ps-sm-3 my-3 my-xxl-auto"
-            >
-              <p class="card-hadings mt-xxl-4">
-                Tincidunt viverra orci nullam vulputate et aliquam. Odio tempus
-                aenean risus ac eu vitae.
-              </p>
+            <div class="text-center text-sm-start">
+              <p class="name mb-1">Jeremy Rose</p>
+              <p class="light-para mb-2 mb-sm-3">Graphic Designer</p>
               <p class="para">
-                Est fusce justo, amet quis velit cras tempor. Pellentesque vitae
-                massa tellus metus egestas egestas maecenas dignissim.
-                Pellentesque ullamcorper vivamus donec tellus quam aliquet nunc
-                neque.
-              </p>
-            </div>
-          </div>
-          <div class="row border-e8e8e8 past-work-hover br-10 my-sm-4 my-4">
-            <div
-              class="col-lg-3 col-sm-4 col-10 mx-auto my-3 my-xxl-auto ps-xxl-0"
-            >
-              <div
-                class="position-relative d-flex flex-column justify-content-end"
-              >
-                <img src="./assets/img/Rectangle 92.png" alt="" />
-                <img
-                  class="position-absolute mb-3 ms-3"
-                  src="./assets/img/play.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div
-              class="col-lg-9 col-sm-8 col-12 ps-xl-5 ps-sm-3 my-3 my-xxl-auto"
-            >
-              <p class="card-hadings mt-xxl-4">
-                Tincidunt viverra orci nullam vulputate et aliquam. Odio tempus
-                aenean risus ac eu vitae.
-              </p>
-              <p class="para">
-                Est fusce justo, amet quis velit cras tempor. Pellentesque vitae
-                massa tellus metus egestas egestas maecenas dignissim.
-                Pellentesque ullamcorper vivamus donec tellus quam aliquet nunc
-                neque.
-              </p>
-            </div>
-          </div>
-          <div class="row border-e8e8e8 past-work-hover br-10 my-4">
-            <div
-              class="col-lg-3 col-sm-4 col-10 mx-auto my-3 my-xxl-auto ps-xxl-0"
-            >
-              <div
-                class="position-relative d-flex flex-column justify-content-end"
-              >
-                <img src="./assets/img/Rectangle 92.png" alt="" />
-                <img
-                  class="position-absolute mb-3 ms-3"
-                  src="./assets/img/play.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div
-              class="col-lg-9 col-sm-8 col-12 ps-xl-5 ps-sm-3 my-3 my-xxl-auto"
-            >
-              <p class="card-hadings mt-xxl-4">
-                Tincidunt viverra orci nullam vulputate et aliquam. Odio tempus
-                aenean risus ac eu vitae.
-              </p>
-              <p class="para">
-                Est fusce justo, amet quis velit cras tempor. Pellentesque vitae
-                massa tellus metus egestas egestas maecenas dignissim.
-                Pellentesque ullamcorper vivamus donec tellus quam aliquet nunc
-                neque.
-              </p>
-            </div>
-          </div>
-          <div class="hr my-4"></div>
-          <p class="card-hadings pb-sm-2">My Gear</p>
-          <div class="row border-e8e8e8 past-work-hover br-10 my-4">
-            <div
-              class="col-lg-3 col-sm-4 col-10 mx-auto my-3 my-xxl-auto ps-xxl-0"
-            >
-              <img
-                class="w-100"
-                src="./assets/img/Rectangle 92camra.png"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-lg-9 col-sm-8 col-12 ps-xl-5 ps-sm-3 my-3 my-xxl-auto"
-            >
-              <p class="card-hadings mt-xxl-4 mb-2">Cannon DS-145</p>
-              <p class="qualty mb-2">Sound</p>
-              <p class="para">
-                Est fusce justo, amet quis velit cras tempor. Pellentesque vitae
-                massa tellus metus egestas egestas maecenas dignissim.
-                Pellentesque ullamcorper vivamus donec tellus quam aliquet nunc
-                neque.
-              </p>
-            </div>
-          </div>
-          <div class="row border-e8e8e8 past-work-hover br-10 my-sm-4">
-            <div
-              class="col-lg-3 col-sm-4 col-10 mx-auto my-3 my-xxl-auto ps-xxl-0"
-            >
-              <img
-                class="w-100"
-                src="./assets/img/Rectangle 92mic.png"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-lg-9 col-sm-8 col-12 ps-xl-5 ps-sm-3 my-3 my-xxl-auto"
-            >
-              <p class="card-hadings mt-xxl-4 mb-2">Harmon Sx2-145</p>
-              <p class="qualty mb-2">Sound</p>
-              <p class="para">
-                Est fusce justo, amet quis velit cras tempor. Pellentesque vitae
-                massa tellus metus egestas egestas maecenas dignissim.
-                Pellentesque ullamcorper vivamus donec tellus quam aliquet nunc
-                neque.
+                <svg class="me-3" width="15" height="20" viewBox="0 0 15 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.5 0C5.5116 0.00245748 3.60531 0.831051 2.1993 2.30402C0.793282 3.77699 0.00235375 5.77405 7.97923e-06 7.85714C-0.00237354 9.55945 0.528403 11.2156 1.51092 12.5714C1.51092 12.5714 1.71546 12.8536 1.74887 12.8943L7.5 20L13.2539 12.8907C13.2839 12.8529 13.4891 12.5714 13.4891 12.5714L13.4898 12.5693C14.4718 11.214 15.0023 9.55866 15 7.85714C14.9976 5.77405 14.2067 3.77699 12.8007 2.30402C11.3947 0.831051 9.4884 0.00245748 7.5 0ZM7.5 10.7143C6.9606 10.7143 6.43331 10.5467 5.98481 10.2328C5.53631 9.91882 5.18675 9.4726 4.98033 8.95052C4.77391 8.42845 4.7199 7.85397 4.82513 7.29974C4.93037 6.74551 5.19011 6.23642 5.57153 5.83684C5.95294 5.43726 6.4389 5.16514 6.96794 5.0549C7.49697 4.94466 8.04534 5.00124 8.54368 5.21749C9.04202 5.43374 9.46797 5.79994 9.76764 6.2698C10.0673 6.73965 10.2273 7.29205 10.2273 7.85714C10.2264 8.61461 9.93874 9.34079 9.42747 9.8764C8.91621 10.412 8.22304 10.7133 7.5 10.7143Z"
+                    fill="#5D5E60" />
+                </svg>
+                Delta, Canada
               </p>
             </div>
           </div>
         </div>
+        <div class="hr my-4"></div>
+        <p class="card-hadings">Bio</p>
+        <p class="para">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum,
+          tortor vitae tempus arcu facilisis. Amet, et ut tortor integer
+          ultrices proin. Nisl id id est enim ipsum ultricies maecenas. Magna
+          at euismod nec tincidunt iaculis quam. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Fermentum, tortor vitae tempus arcu
+          facilisis. Amet, et ut tortor integer ultrices proin. Nisl id id est
+          enim ipsum ultricies maecenas. Magna at euismod nec tincidunt
+          iaculis quam.Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Fermentum, tortor vitae tempus arcu facilisis. Amet, et ut
+          tortor integer ultrices proin. Nisl id id est enim ipsum ultricies
+          maecenas. Magna at euismod nec tincidunt iaculis quam.
+        </p>
+        <div class="hr my-4"></div>
+        <p class="card-hadings pb-sm-2">Past Work</p>
+        <div class="row border-e8e8e8 past-work-hover br-10 my-4">
+          <div class="col-lg-3  col-8   my-3 my-xxl-auto ps-xxl-0">
+            <div class="position-relative d-flex flex-column justify-content-end">
+              <img class="past-work-img-h  " src="./assets/img/Rectangle 92.png" alt="" />
+              <img class="position-absolute mb-3 ms-3" src="./assets/img/play.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-9 col-12 ps-xl-5 ps-sm-3 my-3 my-xxl-auto">
+            <p class="card-hadings mt-xxl-4">
+              Tincidunt viverra orci nullam vulputate et aliquam. Odio tempus
+              aenean risus ac eu vitae.
+            </p>
+            <p class="para">
+              Est fusce justo, amet quis velit cras tempor. Pellentesque vitae
+              massa tellus metus egestas egestas maecenas dignissim.
+              Pellentesque ullamcorper vivamus donec tellus quam aliquet nunc
+              neque.
+            </p>
+          </div>
+        </div>
+        <div class="row border-e8e8e8 past-work-hover br-10 my-4">
+          <div class="col-lg-3  col-8   my-3 my-xxl-auto ps-xxl-0">
+            <div class="position-relative d-flex flex-column justify-content-end">
+              <img class="past-work-img-h  " src="./assets/img/Rectangle 92.png" alt="" />
+              <img class="position-absolute mb-3 ms-3" src="./assets/img/play.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-9 col-12 ps-xl-5 ps-sm-3 my-3 my-xxl-auto">
+            <p class="card-hadings mt-xxl-4">
+              Tincidunt viverra orci nullam vulputate et aliquam. Odio tempus
+              aenean risus ac eu vitae.
+            </p>
+            <p class="para">
+              Est fusce justo, amet quis velit cras tempor. Pellentesque vitae
+              massa tellus metus egestas egestas maecenas dignissim.
+              Pellentesque ullamcorper vivamus donec tellus quam aliquet nunc
+              neque.
+            </p>
+          </div>
+        </div>
+        <div class="row border-e8e8e8 past-work-hover br-10 my-4">
+          <div class="col-lg-3  col-8  my-3 my-xxl-auto ps-xxl-0">
+            <div class="position-relative d-flex flex-column justify-content-end">
+              <img class="past-work-img-h  " src="./assets/img/Rectangle 92.png" alt="" />
+              <img class="position-absolute mb-3 ms-3" src="./assets/img/play.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-9 col-12 ps-xl-5 ps-sm-3 my-3 my-xxl-auto">
+            <p class="card-hadings mt-xxl-4">
+              Tincidunt viverra orci nullam vulputate et aliquam. Odio tempus
+              aenean risus ac eu vitae.
+            </p>
+            <p class="para">
+              Est fusce justo, amet quis velit cras tempor. Pellentesque vitae
+              massa tellus metus egestas egestas maecenas dignissim.
+              Pellentesque ullamcorper vivamus donec tellus quam aliquet nunc
+              neque.
+            </p>
+          </div>
+        </div>
+        <div class="hr my-4"></div>
+        <p class="card-hadings pb-sm-2">My Gear</p>
+        <div class="row border-e8e8e8 past-work-hover br-10 my-4">
+          <div class="col-lg-3   col-8   my-3 my-xxl-auto ps-xxl-0">
+            <img class="past-work-img-h " src="./assets/img/Rectangle 92camra.png" alt="" />
+          </div>
+          <div class="col-lg-9   col-12 ps-xl-5 ps-sm-3 my-3 my-xxl-auto">
+            <p class="card-hadings mt-xxl-4 mb-2">Cannon DS-145</p>
+            <p class="qualty mb-2">Sound</p>
+            <p class="para">
+              Est fusce justo, amet quis velit cras tempor. Pellentesque vitae
+              massa tellus metus egestas egestas maecenas dignissim.
+              Pellentesque ullamcorper vivamus donec tellus quam aliquet nunc
+              neque.
+            </p>
+          </div>
+        </div>
+        <div class="row border-e8e8e8 past-work-hover br-10 my-sm-4">
+          <div class="col-lg-3 col-8  my-3 my-xxl-auto ps-xxl-0">
+            <img class="past-work-img-h " src="./assets/img/Rectangle 92mic.png" alt="" />
+          </div>
+          <div class="col-lg-9 col-12 ps-xl-5 ps-sm-3 my-3 my-xxl-auto">
+            <p class="card-hadings mt-xxl-4 mb-2">Harmon Sx2-145</p>
+            <p class="qualty mb-2">Sound</p>
+            <p class="para">
+              Est fusce justo, amet quis velit cras tempor. Pellentesque vitae
+              massa tellus metus egestas egestas maecenas dignissim.
+              Pellentesque ullamcorper vivamus donec tellus quam aliquet nunc
+              neque.
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

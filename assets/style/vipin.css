@@ -5,82 +5,97 @@
   --color-DCDDDD: #dcdddd;
   --color-000000: #000000;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   margin: 0 auto;
   background-color: var(--color-F8F8F8);
 }
+
 .search-input {
   border: 1px solid var(--color-E8E8E8);
 }
+
 .search-input:focus {
   outline: none;
 }
+
 .search-icon {
   right: 20px;
 }
+
 .form-select:focus {
   box-shadow: none !important;
   border-color: transparent !important;
 }
+
 .Sorting-btn {
   font-size: var(--font-sms);
   color: var(--color-8B8C8D);
   font-weight: 500;
   border: 1px solid var(--color-E8E8E8);
 }
+
 .w-425 {
   width: 425px;
 }
+
 .w-129 {
   max-width: 129px;
 }
-.min-h-100 {
-  min-height: 100px;
-}
+
+
 .card-hadings {
   font-size: var(--font-sm);
   font-weight: 600;
   color: var(--color-17191C);
   line-height: 150%;
 }
+
 .fixed-price {
   font-size: var(--font-xxs);
   font-weight: 600;
   color: var(--color-5D5E60);
 }
+
 .price {
   font-size: var(--font-lg);
   font-weight: 600;
   color: var(--color-127CF9);
 }
+
 .main-hading {
   font-size: var(--font-lg);
   font-weight: 600;
   color: var(--color-17191C);
   line-height: 120%;
 }
+
 .para {
   font-size: var(--font-sms);
   font-weight: 500;
   color: var(--color-5D5E60);
 }
+
 .light-para {
   font-size: var(--font-sms);
   font-weight: 600;
   color: var(--color-5D5E60);
 }
+
 .read-more {
   font-size: var(--font-sms);
   font-weight: 500;
   color: var(--color-127CF9);
 }
+
 .delivery {
   font-size: var(--font-sms);
   font-weight: 500;
   color: var(--color-17191C);
 }
+
 .view-job-btn {
   font-size: var(--font-sms);
   font-weight: 600;
@@ -89,11 +104,13 @@ body {
   background-color: var(--color-127CF9);
   border-radius: 3px;
 }
+
 .view-job-btn:hover {
   transition: all 0.5s ease-in-out;
   box-shadow: 0px 4px 10px -9px #96bfef;
   background-color: #4694ee;
 }
+
 .bluebox {
   top: 12px;
   right: 15px;
@@ -102,16 +119,19 @@ body {
   width: 14px;
   background-color: var(--color-127CF9);
 }
+
 /* job card */
 .job-cards {
   border: 1px solid var(--color-DCDDDD);
   border-radius: 10px;
 }
+
 .job-cards:hover {
   background-color: var(--color-fff);
   box-shadow: 0px 3px 15px #eff3f7;
   transition: all 0.5s ease-in-out;
 }
+
 .card-head-line {
   display: -webkit-box;
 
@@ -119,38 +139,65 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
 /*=========================================== view job page=============================== */
 
 .bg-fff {
   background-color: var(--color-fff);
 }
+
 .border-e8e8e8 {
   border: 1px solid var(--color-E8E8E8);
 }
+
 .hr {
   border-bottom: 1px solid var(--color-E8E8E8);
 }
+
 .br-3 {
   border-radius: 3px;
+}
+
+.br-10 {
+  border-radius: 10px !important;
+}
+
+.m-0-20 {
+  margin: 0 20px;
+}
+
+textarea {
+  resize: none;
 }
 
 .Start-Dispute-hover {
   background-color: var(--color-F8F8F8);
 }
+
 .Start-Dispute-hover:hover {
   transition: all 0.5s ease-in-out;
-  background-color: #e2e0e0;
+  background-color: var(--color-fff);
 }
+
 .delivery-btn {
   background-color: var(--color-127CF9);
   border-radius: 3px;
   font-size: var(--font-sms);
   color: var(--color-fff) !important;
 }
+
 .delivery-btn:hover {
   transition: all 0.5s ease-in-out;
   background-color: #4694ee;
   box-shadow: 0px 7px 20px -9px #96bfef;
+}
+
+button:focus-visible {
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border: 1px solid var(--color-E8E8E8);
 }
 
 /* ===========  modals  =================  */
@@ -160,22 +207,40 @@ body {
   font-weight: 600;
   color: var(--color-000000);
 }
+
 .days {
   font-size: var(--font-xxs);
   font-weight: 500;
   color: var(--color-5D5E60);
 }
+
+
+
+.accordion-shadow:hover {
+  background-color: var(--color-E7F2FE);
+  box-shadow: 0px 3px 15px #eff3f7;
+
+}
+
+.accordion-shadow:hover .accordion-button {
+  background-color: var(--color-E7F2FE);
+  box-shadow: 0px 3px 15px #eff3f7;
+}
+
 .modal-dialog {
   max-width: 949px !important;
 }
+
 .model-sub-hading {
   font-size: var(--font-sms);
   font-weight: 600;
   color: var(--color-17191C);
 }
+
 .accordion-button {
   padding: 16px 16px 6px 24px !important;
 }
+
 .accordion-button:focus {
   box-shadow: none !important;
 }
@@ -185,44 +250,42 @@ body {
   background-color: transparent !important;
   box-shadow: none !important;
 }
+
 .modal-header {
   padding-bottom: 8px !important;
   border-bottom: none !important;
 }
+
 .modal-footer {
   padding-top: 0px !important;
   border-top: none !important;
 }
+
 .pb-6 {
   padding-bottom: 6px !important;
 }
+
 .mx-523 {
   max-width: 523px !important;
 }
+
 .focus:focus {
   outline: none;
   box-shadow: none;
 }
 
-/* ========================= */
-@media (max-width: 768px) {
-  :root {
-    --font-xxxl: 40px;
-    --font-xxl: 30px;
-    --font-xl: 34px;
-    --font-lg: 27px;
-    --font-md: 21px;
-    --font-sm: 17px;
-    --font-smll: 14px;
-    --font-xs: 18px;
-    --font-xxs: 10px;
-  }
+.cursor-pointer {
+  cursor: pointer !important;
 }
-@media (max-width: 567px) {
+
+/* ========================= */
+
+
+@media (max-width: 575.98px) {
   :root {
     --font-xxxl: 38px;
     --font-xxl: 27px;
-    --font-xl: 31px;
+    --font-39: 31px;
     --font-lg: 25px;
     --font-md: 19px;
     --font-sm: 15px;
@@ -231,13 +294,121 @@ body {
     --font-xs: 16px;
     --font-xxs: 10px;
   }
+
   .search-icon {
     right: 10px;
   }
+
   .w-xs-100 {
     width: 100%;
   }
+
   .w-425 {
     max-width: 425px;
+  }
+
+  .videos-height {
+    max-height: 140px;
+  }
+
+  .profile-img {
+    max-height: 150px;
+  }
+
+  .past-work-img-h {
+    max-height: 140px;
+  }
+}
+
+@media(min-width:576px) and (max-width: 767.98px) {
+  :root {
+    --font-xxxl: 40px;
+    --font-xxl: 30px;
+    --font-39: 28px;
+    --font-lg: 27px;
+    --font-md: 21px;
+    --font-sm: 17px;
+    --font-smll: 14px;
+    --font-xs: 18px;
+    --font-xxs: 10px;
+  }
+
+  .videos-height {
+    max-height: 193px;
+  }
+
+  .profile-img {
+    max-height: 150px;
+  }
+
+  .past-work-img-h {
+    max-height: 250px;
+  }
+}
+
+@media(min-width:768px) and (max-width: 991.98px) {
+  :root {
+    --font-39: 30px;
+  }
+
+  .videos-height {
+    max-height: 155px;
+  }
+
+  .profile-img {
+    max-height: 200px;
+  }
+
+  .past-work-img-h {
+    max-height: 300px;
+  }
+}
+
+@media(min-width:992px) and (max-width: 1199.98px) {
+  :root {
+    --font-39: 30px;
+  }
+
+  .videos-height {
+    max-height: 137px;
+  }
+
+  .profile-img {
+    max-height: 200px;
+  }
+
+  .past-work-img-h {
+    max-height: 150px;
+
+  }
+}
+
+@media(min-width:1200px) and (max-width: 1399.98px) {
+  .videos-height {
+    max-height: 166px;
+  }
+
+  .profile-img {
+    max-height: 250px;
+  }
+
+  .past-work-img-h {
+    max-height: 180px;
+
+  }
+}
+
+@media (min-width:1400px) {
+  .videos-height {
+    max-height: 193px;
+  }
+
+  .profile-img {
+    max-height: 282px;
+  }
+
+  .past-work-img-h {
+    max-height: 209px;
+    width: 100%;
   }
 }
