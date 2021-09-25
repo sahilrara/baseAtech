@@ -1,0 +1,309 @@
+body {
+  background-color: #F8F8F8 !important;
+}
+
+:root {
+  /* BLUE  SCHEME  */
+  --color-127CF9: #127CF9;
+  --color-59A3FB: #59A3FB;
+  --color-88BEFC: #88BEFC;
+  --color-B8D8FD: #B8D8FD;
+  --color-E7F2FE: #E7F2FE;
+  --color-FA1111: #FA1111;
+  /* KESHAV */
+  /* BLACK SCHEME */
+  --color-17191C: #17191C;
+  --color-5D5E60: #5D5E60;
+  --color-8B8C8D: #8B8C8D;
+  --color-B9BABB: #B9BABB;
+  --color-E8E8E8: #E8E8E8;
+  --color-F8F8F8: #F8F8F8;
+  --color-white: white;
+  /* FONT SIZES  */
+  --font-xxxl: 62px;
+  --font-xxl: 49px;
+  --font-xl: 39px;
+  --font-lg: 31px;
+  --font-md: 25px;
+  --font-sm: 20px;
+  --font-smll: 16px;
+  --font-xsm: 10px;
+  --font-xs: 20px;
+  --font-xxs: 13px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-xxxl: 40px;
+    --font-xxl: 30px;
+    --font-xl: 34px;
+    --font-lg: 27px;
+    --font-md: 21px;
+    --font-sm: 17px;
+    --font-smll: 14px;
+    --font-xs: 18px;
+  }
+}
+
+@media (max-width: 567px) {
+  :root {
+    --font-xxxl: 38px;
+    --font-xxl: 27px;
+    --font-xl: 31px;
+    --font-lg: 25px;
+    --font-md: 19px;
+    --font-sm: 15px;
+    --font-smll: 12px;
+    --font-xs: 16px;
+  }
+}
+
+.common-text {
+  font-size: var(--font-smll);
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-5D5E60);
+  font-weight: 500;
+}
+
+.common-heading-Medium {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-17191C);
+  font-weight: 600;
+  font-size: var(--font-lg);
+}
+
+.common-heading {
+  font-weight: 500;
+  font-size: var(--font-xl);
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-17191C);
+}
+
+/* FONT WEIGHT */
+.f-w-600 {
+  font-weight: 600 !important;
+}
+
+/* FONT SIZE */
+.xxs-font {
+  font-size: var(--font-xxs) !important;
+}
+
+.xxs-font {
+  font-size: var(--font-xxs) !important;
+}
+
+.smll-font {
+  font-size: var(--font-smll) !important;
+}
+
+.xs-font {
+  font-size: var(--font-xs) !important;
+}
+
+.md-font {
+  font-size: var(--font-md) !important;
+}
+
+/* COLOR */
+.text-white {
+  color: var(--color-white) !important;
+}
+
+.text-black {
+  color: var(--color-17191C);
+}
+
+.text-blue {
+  color: var(--color-127CF9) !important;
+}
+
+.text-red {
+  color: var(--color-FA1111);
+}
+
+.text-8B8C8D {
+  color: var(--color-8B8C8D) !important;
+}
+
+/*=============== my css ============= */
+:root {
+  --font-24: 24px;
+  --color-DCDDDD: #dcdddd;
+  --color-000000: #000000;
+}
+
+.text-0000 {
+  color: var(--color-000000) !important;
+}
+
+.text-dcdddd {
+  color: var(--color-DCDDDD) !important;
+}
+
+.bg-f8f8f8 {
+  background-color: var(--color-F8F8F8) !important;
+}
+
+.font-24 {
+  font-size: var(--font-24) !important;
+}
+
+.font-md {
+  font-size: var(--font-md) !important;
+}
+
+.border-e8e8e8 {
+  border: 1px solid var(--color-E8E8E8);
+}
+
+.hr {
+  border-bottom: 1px solid var(--color-E8E8E8);
+}
+
+.m-0-20 {
+  margin: 0 20px;
+}
+
+.Start-Dispute-hover {
+  background-color: var(--color-F8F8F8);
+}
+
+.Start-Dispute-hover:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: var(--color-white);
+}
+
+.delivery-btn {
+  font-weight: 600;
+  background-color: var(--color-127CF9);
+  border-radius: 3px;
+  font-size: var(--font-smll);
+  color: var(--color-white) !important;
+}
+
+.delivery-btn:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #4694ee;
+  box-shadow: 0px 7px 20px -9px #96bfef;
+}
+
+button:focus-visible {
+  box-shadow: none !important;
+
+}
+
+.form-control:focus {
+  border: 1px solid var(--color-E8E8E8);
+}
+
+.view-job-btn {
+  font-size: var(--font-smll);
+  font-weight: 600;
+  color: var(--color-white) !important;
+  padding: 8px 16px;
+  background-color: var(--color-127CF9);
+  border-radius: 3px;
+}
+
+.view-job-btn:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 4px 10px -9px #96bfef;
+  background-color: #327ED6;
+}
+
+/* model start */
+/* ===========  modals  =================  */
+
+.accordion-shadow:hover {
+  background-color: var(--color-E7F2FE);
+  box-shadow: 0px 3px 15px #eff3f7;
+
+}
+
+.accordion-shadow:hover .accordion-button {
+  background-color: var(--color-E7F2FE);
+  box-shadow: 0px 3px 15px #eff3f7;
+}
+
+.modal-dialog {
+  max-width: 949px !important;
+}
+
+.accordion-button {
+  padding: 16px 16px 6px 24px !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.modal-header {
+  padding-bottom: 8px !important;
+  border-bottom: none !important;
+}
+
+.modal-footer {
+  padding-top: 0px !important;
+  border-top: none !important;
+}
+
+.pb-6 {
+  padding-bottom: 6px !important;
+}
+
+.mx-523 {
+  max-width: 523px !important;
+}
+
+.focus:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+/* end */
+
+/* my form page css */
+.border-bottom-e8e8e8 {
+  border-bottom: 1px solid var(--color-E8E8E8);
+}
+
+.f-w-500 {
+  font-weight: 500;
+}
+
+.br-3 {
+  border-radius: 3px;
+}
+
+.br-10 {
+  border-radius: 10px;
+}
+
+.border-b9babb {
+  border: 1px solid var(--color-B9BABB);
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border: 1px solid var(--color-B9BABB);
+  outline: none !important;
+}
+
+.main-box-shadow {
+  box-shadow: 0px 3px 15px #EFF3F7;
+}
+
+textarea {
+  resize: none;
+}
